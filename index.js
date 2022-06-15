@@ -1,21 +1,7 @@
-// Servidor de express
-const express = require('express')
-const app = express()
+require('dotenv').config()
 
-// Servidor de socket
-const server = require('http').createServer(app);
+const Server = require('./models/server');
 
-// COnfiguración del socket server
-const io = require('socket.io')(server);
+const server = new Server();
 
-// Desplegar el directorio público
-app.use(express.static(__dirname + '/public')); 
-
-io.on('connection', () => { 
-  console.log('cliente conectado');
-});
-
-
-server.listen(8080, () => {
-  console.log('Server corriendo en el puerto 8080');
-});
+server.execute();
