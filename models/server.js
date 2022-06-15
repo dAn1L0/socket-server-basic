@@ -21,7 +21,7 @@ class Server {
   }
 
   middleware() {
-    this.app.use("/", express.static(path.resolve(__dirname,'../public')) )
+    this.app.use("../public", express.static(path.resolve(__dirname,'public')) )
   }
 
 
