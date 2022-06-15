@@ -21,12 +21,11 @@ class Server {
   }
 
   middleware() {
-    this.app.use(express.static(path.resolve(__dirname,'./public')) )
+    this.app.use(express.static(path.resolve(__dirname,'../public')) )
   }
 
-
   socketsIO(){
-    new Sockets( this.io )
+    new Sockets(this.io)
   }
 
   execute() {
