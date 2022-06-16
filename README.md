@@ -3,5 +3,5 @@
 Install
 
  ```
- yarn add 
+ yarn install
  ```
