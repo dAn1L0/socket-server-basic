@@ -1,7 +1,9 @@
-## Aplicación SocketIO básico
+## Aplicación Bandnames with socketIO
+
+Sin refactorizar.
 
 Install
 
  ```
- yarn add 
+ yarn install
  ```
