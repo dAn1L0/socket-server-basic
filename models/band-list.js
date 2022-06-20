@@ -5,7 +5,7 @@ class BandList {
 
   constructor(){
     this.bands = [
-      new Band('Metalica'),
+      new Band('Metallica'),
       new Band('Creed'),
       new Band('Rammstein'),
       new Band('Medina Azahara')
